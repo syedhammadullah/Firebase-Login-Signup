@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="background-video-container">
+      <video autoplay muted loop id="background-video">
+        <source src="wildstar_720p_5000br.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div style="border-radius: 50px" class="container">
+      <div id="login-form" class="form">
+        <h2 style="text-align: center">LOGIN</h2>
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        />
+        <button style="border-radius: 110px" onclick="login()">Login</button>
+        <p style="text-align: center">
+          Don't have an account? <a href="signup.html">Sign up here</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
