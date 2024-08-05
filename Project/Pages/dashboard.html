@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <div class="background-video-container">
       <video autoplay muted loop id="background-video">
         <source
-          src="Code_flythough_loop_01_Videvo_720p_5000br.mp4"
+          src="../Background/Code_flythough_loop_01_Videvo_720p_5000br.mp4"
           type="video/mp4"
         />
       </video>
@@ -19,7 +19,7 @@
 
     <div style="border-radius: 50px" class="container2">
       <div id="dashboard">
-        <h2 style="color: whitesmoke; text-align: center">
+        <h2 style="color: black; text-align: center">
           Welcome, <span id="username"></span>
         </h2>
         <button
@@ -33,6 +33,6 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
