@@ -22,7 +22,7 @@ function signup() {
                 title: 'Signup Successful',
                 text: 'Please log in with your new account.',
             }).then(() => {
-                window.location.href = "index.html";
+                window.location.href = "./login.html";
             });
         })
         .catch((error) => {
@@ -46,7 +46,7 @@ function login() {
             }).then(() => {
                 const user = userCredential.user;
                 window.localStorage.setItem('username', user.email);
-                window.location.href = "dashboard.html";
+                window.location.href = "./dashboard.html";
             });
         })
         .catch((error) => {
@@ -65,7 +65,7 @@ function logout() {
             title: 'Logged Out',
             text: 'You have been logged out.',
         }).then(() => {
-            window.location.href = "index.html";
+            window.location.href = "./login.html";
         });
     });
 }
